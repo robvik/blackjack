@@ -1,0 +1,42 @@
+﻿<Window x:Class="Blackjack.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Blackjack"
+        mc:Ignorable="d"
+        Title="User registration" Height="433" Width="410.5" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        <!-- Labels -->
+        <Label x:Name="lblFullname" Content="Fullname:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38,23,0,0"/>
+        <Label x:Name="lblAddress" Content="Address:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38,72,0,0"/>
+        <Label x:Name="lblEmail" Content="Email:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38,222,0,0"/>
+        <Label x:Name="lblUsername" Content="Username:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38,260,0,0"/>
+        <Label x:Name="lblPassword" Content="Password:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38,290,0,0"/>
+
+        <!-- Textboxes -->
+        <TextBox x:Name="txtFirstname" HorizontalAlignment="Left" Height="23" Margin="114,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110"/>
+        <TextBox x:Name="txtLastname" HorizontalAlignment="Left" Height="23" Margin="243,27,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtStreetname" HorizontalAlignment="Left" Height="23" Margin="114,75,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="249"/>
+        <TextBox x:Name="txtCity" HorizontalAlignment="Left" Height="23" Margin="114,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtState" HorizontalAlignment="Left" Height="23" Margin="243,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtZipcode" HorizontalAlignment="Left" Height="23" Margin="114,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cboCountry" HorizontalAlignment="Left" Margin="243,171,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="114,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="249"/>
+        <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Height="22" Margin="114,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="249"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="114,294,0,0" VerticalAlignment="Top" Width="249" Height="22"/>
+        <Button x:Name="btnRegister" Content="Register" HorizontalAlignment="Left" VerticalAlignment="Top" Width="110" Margin="82,350,0,0" Height="25" Click="btnRegister_Click"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="110" Margin="216,350,0,0" Height="25" IsCancel="True"/>
+
+        <!-- Descriptive labels -->
+        <Label x:Name="lblFirstname" Content="Firstname" Foreground="LightGray" FontStyle="Italic" HorizontalAlignment="Left" Margin="114,46,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblLastname" Content="Lastname" Foreground="LightGray" FontStyle="Italic" HorizontalAlignment="Left" Margin="243,46,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblStreetname" Content="Streetname" Foreground="LightGray" FontStyle="Italic" HorizontalAlignment="Left" Margin="114,94,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCity" Content="City" Foreground="LightGray" FontStyle="Italic" HorizontalAlignment="Left" Margin="114,142,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblState" Content="State/Province" Foreground="LightGray" FontStyle="Italic" HorizontalAlignment="Left" Margin="243,142,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblZipcode" Content="Zipcode" Foreground="LightGray" FontStyle="Italic" HorizontalAlignment="Left" Margin="114,190,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCountry" Content="Country" Foreground="LightGray" FontStyle="Italic" HorizontalAlignment="Left" Margin="243,190,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

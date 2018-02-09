@@ -1,0 +1,67 @@
+﻿<Window x:Class="Blackjack.CreditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Blackjack"
+        mc:Ignorable="d"
+        Title="Add Credit to Account" Height="322.772" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        <Label x:Name="lblWho" Content="Enter username of account to charge credit: " HorizontalAlignment="Left" Margin="22,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.169,0.016"/>
+        <Label x:Name="lblCreditToAdd" Content="Credit to add (USD):" HorizontalAlignment="Left" Margin="89,66,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPayment" Content="Choose payment option:" HorizontalAlignment="Left" Margin="15,101,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCardnumber" Content="Card number:" HorizontalAlignment="Left" Margin="15,132,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblExpireMonth" Content="Expiry month:" HorizontalAlignment="Left" Margin="15,161,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblExpireMonth_Copy" Content="Expiry year:" HorizontalAlignment="Left" Margin="140,161,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCVCCVV" Content="CVC/CVV:" HorizontalAlignment="Left" Margin="126,193,0,0" VerticalAlignment="Top"/>
+
+        <ComboBox x:Name="cboCreditToAdd" HorizontalAlignment="Left" Margin="210,68,0,0" VerticalAlignment="Top" Width="56">
+            <ComboBoxItem Content="10" IsSelected="True"/>
+            <ComboBoxItem Content="25"/>
+            <ComboBoxItem Content="50"/>
+            <ComboBoxItem Content="75"/>
+            <ComboBoxItem Content="100"/>
+        </ComboBox>
+        <ComboBox x:Name="cboPaymentOption" HorizontalAlignment="Left" Margin="160,105,0,0" VerticalAlignment="Top" Width="106">
+            <ComboBoxItem Content="Visa" IsSelected="True"/>
+            <ComboBoxItem Content="Mastercard"/>
+            <ComboBoxItem Content="Maestro"/>
+            <ComboBoxItem Content="American Express"/>
+        </ComboBox>
+        <ComboBox x:Name="cboExpiryMonth" HorizontalAlignment="Left" Margin="98,165,0,0" VerticalAlignment="Top" Width="40">
+            <ComboBoxItem Content="1" IsSelected="True"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+            <ComboBoxItem Content="6"/>
+            <ComboBoxItem Content="7"/>
+            <ComboBoxItem Content="8"/>
+            <ComboBoxItem Content="9"/>
+            <ComboBoxItem Content="10"/>
+            <ComboBoxItem Content="11"/>
+            <ComboBoxItem Content="12"/>
+        </ComboBox>
+        <ComboBox x:Name="cboExpiryYear" HorizontalAlignment="Left" Margin="210,165,0,0" VerticalAlignment="Top" Width="56">
+            <ComboBoxItem Content="2017" IsSelected="True"/>
+            <ComboBoxItem Content="2018"/>
+            <ComboBoxItem Content="2019"/>
+            <ComboBoxItem Content="2020"/>
+            <ComboBoxItem Content="2021"/>
+            <ComboBoxItem Content="2022"/>
+            <ComboBoxItem Content="2023"/>
+            <ComboBoxItem Content="2024"/>
+            <ComboBoxItem Content="2025"/>
+            <ComboBoxItem Content="2026"/>
+        </ComboBox>
+
+        <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Height="23" Margin="22,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244"/>
+        <TextBox x:Name="txtCardnumber" HorizontalAlignment="Left" Height="23" Margin="102,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164"/>
+        <TextBox x:Name="txtCVC_CVV" HorizontalAlignment="Left" Height="23" Margin="193,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73"/>
+
+        <Button x:Name="btnAddCredit" Content="Add Credit" HorizontalAlignment="Left" Margin="22,238,0,0" VerticalAlignment="Top" Width="110" Click="btnAddCredit_Click"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="156,238,0,0" VerticalAlignment="Top" Width="110" IsCancel="True" Click="btnCancel_Click"/>
+
+    </Grid>
+</Window>
